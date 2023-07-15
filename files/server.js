@@ -113,7 +113,7 @@ setInterval(keep_web_alive, 10 * 1000);
 
 app.use( /* 具体配置项迁移参见 https://github.com/chimurai/http-proxy-middleware/blob/master/MIGRATION.md */
   legacyCreateProxyMiddleware({
-    target: 'http://127.0.0.1:8080/', /* 需要跨域处理的请求地址 */
+    target: 'http://admin:password@127.0.0.1:8080/', /* 需要跨域处理的请求地址 */
     ws: true, /* 是否代理websocket */
     changeOrigin: true, /* 是否需要改变原始主机头为目标URL,默认false */ 
     on: {  /* http代理事件集 */ 
